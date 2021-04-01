@@ -5,7 +5,8 @@ import {
   HomePage,
   Login,
   NotFound,
-  PersonPage,
+  Customers,
+  OrderPage,
 } from '../pages';
 
 const PrivateRoute = ({ component: Component, ...rest})=>(
@@ -26,7 +27,8 @@ const Routes = () => (
   <Switch>
     <Route exact path="/" component={Login} />
     <PrivateRoute path="/home" component={HomePage} />
-    <PrivateRoute path="/person/:id" component={ PersonPage } />
+    <PrivateRoute path="/order" component={OrderPage} />
+    <PrivateRoute path="/customers" component={ Customers } />
     <Route component={NotFound} />
   </Switch>
   
