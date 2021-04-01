@@ -1,9 +1,13 @@
 import React from 'react';
-import  Dashboard  from '../../components/Dashboard';
+import Dashboard from '../../components/MaterialUiDasbord/Dashboard';
+import { Container } from '../../components';
 
-const HomePage = () =>
-<>
- <Dashboard />
-</>   
+const HomePage = () => (
+  <>
+    <Container>
+      <Dashboard />
+    </Container>
+  </>
+);
 
 export default HomePage;
