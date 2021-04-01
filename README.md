@@ -1,4 +1,5 @@
 # DashBord
 
+Controle Financeiro versao 2.0 : app web em react
 
-versao 2.0 : https://github.com/Galaraz/ControleFinanceiro
+versao Inicial: https://github.com/Galaraz/ControleFinanceiro
