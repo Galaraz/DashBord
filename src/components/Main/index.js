@@ -91,7 +91,7 @@ function Main(props) {
 	const classes = useStyles();
 	return (
 		<>
-		<main className={classes.content} onClick={() => {document.getElementsByClassName('result')[0].style.display = 'none'}}>
+		<main className={classes.content} >
 			{props.children}
 			<Box pt={4}>
              <Copyright /> 

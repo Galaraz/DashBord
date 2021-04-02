@@ -7,22 +7,23 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import { Link } from 'react-router-dom';
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={Link} to="/">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Painel" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/order">
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Ordens" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/customers">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
