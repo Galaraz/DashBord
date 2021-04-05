@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Container(props) {
+function ComboBox(props) {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -105,4 +105,4 @@ function Container(props) {
     )
 }
 
-export default Container;
+export default ComboBox;

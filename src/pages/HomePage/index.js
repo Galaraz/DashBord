@@ -1,12 +1,12 @@
 import React from 'react';
-import Dashboard from '../../components/MaterialUiDasbord/Dashboard';
-import { Container } from '../../components';
+import Dashboard from '../../components/BaseDasbord/Dashboard';
+import { ComboBox } from '../../components';
 
 const HomePage = () => (
   <>
-    <Container>
+    <ComboBox>
       <Dashboard />
-    </Container>
+    </ComboBox>
   </>
 );
 
