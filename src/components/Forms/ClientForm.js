@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Controls from '../Controls/Controls';
 import { CustomerForm, Form } from '../Forms/CustomForm';
 import * as employeeService from '../../services/employeeService';
-
+import Title from '../BaseDasbord/Title';
 
  
   const initialFValues = {
@@ -56,8 +56,11 @@ import * as employeeService from '../../services/employeeService';
       <>
         
            <Form onSubmit={handleSubmit}>
+           <Title>Cadastro de Empresas</Title>
               <Grid container>
+              
                   <Grid item xs={12} sm={6} md={6} lg={6}>
+                  
                       <Controls.Input
                           name="Nome"
                           label="Nome"

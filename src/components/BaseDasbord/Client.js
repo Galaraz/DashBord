@@ -10,16 +10,16 @@ import Title from './Title';
 import { Link as RouterLink } from 'react-router-dom';
 
 // Generate Order Data
-function createData(id, date, name, Type, amount) {
-  return { id, date, name, Type, amount };
+function createData(id, name,address , cnpj, razaoSocial) {
+  return { id, name, address, cnpj, razaoSocial };
 }
 
 const rows = [
-  createData(0, '16 Mar, 2019', 'Elvis Presley', 'receita', 312.44),
-  createData(1, '16 Mar, 2019', 'Paul McCartney', 'receita', 866.99),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'receita', 100.81),
-  createData(3, '16 Mar, 2019', 'Michael Jackson', 'despesa', -654.39),
-  createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'despesa', -212.79),
+  createData(0, 'Elvis Presley', 'hoolyhood 370', 312.44, 'musico'),
+  createData(1, 'Paul McCartney', 'loge pra guariy', 866.99, 'beeatles'),
+  createData(2, 'Tom Scholz', 'lugar', 100.81, 'medicoanomnimos'),
+  createData(3, 'Michael Jackson', 'endereço ae', 654.39, 'nerverland' ),
+  createData(4, 'Bruce Springsteen', 'um endereço maneiro', 212.79, 'cantor'),
 ];
 
 /* function preventDefault(event) {
@@ -32,29 +32,28 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Orders() {
+export default function Client() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Ordens Recentes</Title>
+      <Title>Ultimas Empresas</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Data</TableCell>
             <TableCell>Nome</TableCell>
+            <TableCell>Endereço</TableCell>
             
-            <TableCell>Tipo</TableCell>
-            <TableCell align="right">Valor</TableCell>
+            <TableCell>CNPJ</TableCell>
+            <TableCell align="right">Razao Social</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.date}</TableCell>
               <TableCell>{row.name}</TableCell>
-             
-              <TableCell>{row.Type}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
+              <TableCell>{row.address}</TableCell>             
+              <TableCell>{row.cnpj}</TableCell>
+              <TableCell align="right">{row.razaoSocial}</TableCell>
             </TableRow>
           ))}
         </TableBody>

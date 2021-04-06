@@ -57,7 +57,7 @@ export default function Orderpage() {
       <Form onSubmit={handleSubmit}>
         <Grid container>
           <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Title>Depósitos Recentes</Title>
+          <Title>Cadastar Contas</Title>
             <Controls.Select
               name="receptor"
               label="Receptor"
